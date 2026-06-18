@@ -1,0 +1,236 @@
+/* stylesheet.css */
+
+/* Global Reset and Base Styling */
+/* Resets margin, padding, and sets global font and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background Styling */
+/* Sets the main background image and ensures it covers the entire viewport */
+body {
+    background-image: url(images/mamma-mia-background.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+}
+
+/* Responsive Design */
+/* Adjusts styles for smaller screens */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2em;
+    }
+    .tagline {
+        font-size: 1.8em;
+    }
+    .description p {
+        font-size: 1em;
+    }
+    .login-form {
+        width: 90%;
+        padding: 15px;
+    }
+    .login-input {
+        font-size: 0.9em;
+    }
+    .login-button {
+        font-size: 1em;
+    }
+}
+
+/* Main Section Styling */
+/* Styles the container for the primary content */
+.main-section {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+}
+
+/* Header Styling */
+/* Centers the title and subtitle within the header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+}
+
+/* Title and Subtitle Styling */
+/* Adds responsive fonts, colors, and hover effects to the header text */
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: calc(6vw + 2em);
+    color: #fc0681;
+    margin-bottom: 0;
+    text-align: center;
+    transition: color 1s ease;
+}
+
+.title:hover {
+    color: #ffd900; 
+}
+
+.subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: calc(4vw + 1.5em);
+    color: #FFD900;
+    margin-top: 0;
+    text-align: center;
+}
+
+.subtitle:hover {
+    color: #fc0681; 
+}
+
+/* Description Section */
+/* Styles the text and call-to-action button */
+.description {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.description p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.description h2 {
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Call-to-Action Button */
+/* Styles the button with hover and transition effects */
+.cta-button {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FF69B4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF1493;
+    transform: scale(1.05);
+}
+
+/* Login Form */
+/* Styles the login form and its input fields */
+.login-form {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.login-input {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.login-input:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.login-button {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #FF69B4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #FF1493;
+    transform: scale(1.05);
+}
+
+/* Shine Effect Styling */
+/* Defines the appearance of the dynamic shine overlay */
+.shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+}
+
+/* Leaf Animation */
+/* Configures the container and appearance of falling leaves */
+.leaf-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.leaf {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    opacity: 0.8;
+}

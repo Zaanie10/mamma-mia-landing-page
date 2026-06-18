@@ -1,0 +1,55 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page Metadata and Styles -->
+    <!-- Defines character encoding, viewport settings, and includes external stylesheets and fonts -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamma Mia Landing Page</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <!-- Contains the main title and subtitle for the landing page -->
+    <header>
+        <h1 class="title">Mamma Mia!</h1>
+        <h2 class="subtitle">Here we go again...</h2>
+    </header>
+    
+    <!-- Main Section -->
+    <!-- Includes the page description, call-to-action button, and login form -->
+    <main class="main-section">
+        <div class="description">
+            <h2 class="tagline">Feel the Rhythm of Love and Music!</h2>
+            <p>
+                Join the fun on the beautiful Greek island as the hit songs of ABBA come alive in a story of love, laughter, and friendship. 
+                Get swept away by the sun-soaked beaches and unforgettable tunes of Mamma Mia!
+            </p>
+            <button class="cta-button">Join the Fun!</button>
+        </div>
+
+        <!-- Login Form -->
+        <!-- Contains input fields for username and password along with a login button -->
+        <form class="login-form">
+            <input type="text" placeholder="Username" class="login-input">
+            <input type="password" placeholder="Password" class="login-input">
+            <button type="submit" class="login-button">Login</button>
+        </form>
+
+        <!-- Decorative Leaf Container -->
+        <!-- Dynamically generates and animates falling leaves -->
+        <div class="leaf-container"></div>
+    </main>
+    
+    <!-- Scripts -->
+    <!-- Includes GSAP library and external JavaScript file for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
