@@ -4,6 +4,12 @@ An animated, responsive landing page inspired by *Mamma Mia!* and built as an in
 
 This project focuses on creating an engaging user experience through responsive design, interactive elements, and animation using HTML, CSS, JavaScript, and GSAP.
 
+## Preview
+
+<p align="center">
+  <img src="screenshots/homepage.png" alt="Mamma Mia Landing Page" width="900">
+</p>
+
 ## Overview
 
 The Mamma Mia Landing Page was designed to showcase modern front-end development techniques through a visually engaging promotional website. The project incorporates animations, interactive components, custom styling, and responsive layouts to create a dynamic user experience across desktop and mobile devices.
